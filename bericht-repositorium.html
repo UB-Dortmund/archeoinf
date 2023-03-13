@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="de-DE">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>ArcheoInf &raquo; Bericht zum Arbeitspaket Dokumentenrepositorium</title>
+<link rel="stylesheet" href="wp-content/themes/default_de/style.css" type="text/css" media="all" />
+<link rel='index' title='ArcheoInf' href='http://www.ub.tu-dortmund.de/archeoinf' />
+<link rel='up' title='Beiratstreffen am 30.10.2008' href='beiratstreffen.html' />
+<link rel="shortcut icon" href="images/favicon.ico" />
+</head>
+<body>
+<div id="page">
+<div id="header">
+<h1 class="unsichtbar">ArcheoInf - Leistungszentrum für die Archäologie</h1>
+<a href="index.html"><img src="images/archeoinf-logo.png" alt="Archeoinf-Logo" width="389" height="51" /></a>
+</div>
+<div id="navigation">
+<ul>
+	<li class="page_item page-item-6 current_page_item"><a href="archeoinf.html" title="ArcheoInf">ArcheoInf</a>
+<ul>
+	<li class="page_item page-item-64"><a href="english.html" title="English Version">English Version</a></li>
+	<li class="page_item page-item-7"><a href="partner.html" title="Partner im ArcheoInf-Konsortium">Partner im ArcheoInf-Konsortium</a></li>
+	<li class="page_item page-item-188"><a href="partnerprojekte.html" title="Partnerprojekte / Einrichtungen">Partnerprojekte / Einrichtungen</a></li>
+	<li class="page_item page-item-199"><a href="prototyp.html" title="Prototyp Dokumentenrepositorium">Prototyp Dokumentenrepositorium</a></li>
+	<li class="page_item page-item-10"><a href="impressum.html" title="Impressum">Impressum</a></li>
+</ul>
+</li>
+<li class="page_item page-item-31"><a href="praesentationen.html" title="Präsentationen / Presse">Präsentationen / Presse</a></li>
+<li class="page_item page-item-88"><a href="veranstaltungen.html" title="Veranstaltungen">Veranstaltungen</a>
+<ul>
+	<li class="page_item page-item-130"><a href="beiratstreffen.html" title="Beiratstreffen am 30.10.2008">Beiratstreffen am 30.10.2008</a></li>
+	<li class="page_item page-item-134"><a href="workshop.html" title="Workshop am 31.10.2008">Workshop am 31.10.2008</a></li>
+</ul>
+</li>
+</ul>
+<img src="images/vermessung.jpg" alt="" width="189" height="434" />
+</div>  
+<div id="content">
+<div class="post" id="post-90">
+<h2>Bericht zum Arbeitspaket Dokumentenrepositorium</h2>
+<div class="entry">
+<h3>Die Erweiterung der Ontologie um bibliographische Daten</h3>
+<p>In den Berichten der Informatiker und der Gruppe rund um die Ontologie wurde bisher ein Ontologiemodell vorgestellt, welches kompatibel zum <a href="http://cidoc.ics.forth.gr/index.html">CIDOC CRM</a> in der Version des English Heritage ist. Dies bezieht sich auf den Teil der Daten aus den archäologischen Datenbanken, der sich als Forschungsdaten bzw. Primärdaten einordnen läßt. Diese werden aus den Datenbanken ausgelesen, aufbereitet und in einem gemeinsamen Repositorium bzw. Archiv gesammelt.</p>
+<p>Diese Daten sind aber nur ein Teil des archäologischen Materials. In den Datenbanken der archäologischen Projekte kommen auch bibliographische Daten wie Literaturverweise, Zitate, Abstracts, Volltexte usw., die auch über die ArcheoInf-Ontologie erschlossen werden sollen und mit den Primärdaten verknüpft werden bzw. bleiben sollen. Dabei gibt es allerdings ein Problem: Die bibliographischen Daten lassen sich in CIDOC CRM und somit in unser Ontologie-Modell nicht einbinden! D.h. das Modell ist noch immer zu klein.</p>
+<p>In der Arbeitsgruppe zum Dokumentenrepositorium wird daher folgende Lösung verfolgt: Das Ontologiemodell von ArcheoInf wird um einen FRBRoo-kombatiblen Teil erweitert (siehe Abbildung 1).</p>
+<p><img src="wp-content/uploads/bild1.jpg" alt="Abbildung 1: Schematische Darstellung des Lösungsansatzes, Teil 1" title="Abbildung 1: Schematische Darstellung des Lösungsansatzes, Teil 1"  class="alignright wp-image-104" /><br />
+<strong>Abbildung 1: Schematische Darstellung des Lösungsansatzes, Teil 1</strong></p>
+<p>FRBRoo basiert auf den so genannten <a href="http://www.ifla.org/VII/s13/frbr/index.htm">Functional Requirements for Bibliographic Records</a>, kurz FRBR. Es wurde und wird in einer Arbeitsgruppe der IFLA, dem internationalen Dachverband der Bibliotheken, entwickelt.  <a href="http://cidoc.ics.forth.gr/frbr_inro.html">FRBRoo</a> verbindet CIDOC CRM mit den FRBR.<br />
+Ein näheres Eingehen auf FRBR würde hier den Rahmen völlig sprengen! Nur soviel: FRBR ist ein Datenmodell, welches den Anspruch erhebt, die bibliographischen Daten nutzerorientierter und somit Prozeß-basierter zu strukturieren als dies bisher der Fall ist. FRBR ist weder ein Datenformat noch ein Katalogisierungsregelwerk. </p>
+<p>Wie sich CIDOC CRM zu FRBRoo verhält kann man schematisch an der Darstellung in Abbildung 2 sehen. Die blauen Kästchen gehören zu FRBR und die gelben zu CIDOC. Wie man unschwer erkennen kann sind die Modelle und deren Verknüpfungen nicht trivial.</p>
+<p><img src="http://cidoc.ics.forth.gr/frbr_graphical_representation/graphical_representation/images_graphical_rept/work_expression_dynamic.jpg" title="Abbildung 2: FRBRoo: Work and Expression - dynamic view" alt="Abbildung 2: FRBRoo: Work and Expression - dynamic view" /><br />
+<strong>Abbildung 2: FRBRoo: Work and Expression &#8211; dynamic view</strong>, Quelle: <a href="http://cidoc.ics.forth.gr/frbr_graphical_representation/graphical_representation/work_expression_dynamic.html">Graphical representation of the FRBRoo version 1.0</a></p>
+<p>Die Daten aus den archäologischen Datenbanken müssen nun irgendwie an die FRBR-Ontologie angebunden werden. Dies geschieht im Groben in drei Schritten:</p>
+<ol>
+<li>Die Daten werden in das Literaturverwaltungsprogramm Citavi importiert und dort per Hand nach bearbeitet.
+<p>Gründe, die für Citavi (Link: http://citavi.de/) sprechen sind sehr guter Support, Import/Export von CSV-Daten und die Deutschsprachigkeit.
+</li>
+<li>Die Daten werden im MODS-Format aus Citavi exportiert und ein Dokumentenrepositorium abgespeichert.
+<p>MODS ist ein Metadatenformat für bibliographische Daten, welches von der Library of Congress (USA) entwickelt wurde. Es ist eine abgespeckte Version von MARCXML, was seinerseits eine XML-Darstellung von MARC21 ist, dem bibliographischen Austauschformat im anglo-amerikanischen Raum. (<a href="http://www.loc.gov/standards/">Standards at the Library of Congress</a>)<br />
+Die Exportfunktion für Citavi bekommen wir aufgrund des oben genannten guten Supports eigens zur Verfügung gestellt.<br />
+Das Repositorium ist eine Eigenentwicklung der UB Bochum auf Basis von Atom-Technologien (z.B. bekannt von RSS-Feeds) und ist nicht mit dem oben genannten Repositorium für Primärdaten zu verwechseln.
+</li>
+<li>Die MODS-Daten aus dem Dokumentenrepositorium werden dann FRBR-kompatibel über eine Exportschnittstelle angeboten (vergleichbar mit der <a href="http://www.openarchives.org/pmh/">OAI-PMH-Schnittstelle</a>).
+</li>
+</ol>
+<p>Somit lässt sich das obige Schema nun wie folgt vervollständigen.</p>
+<p><img src="wp-content/uploads/bild3.jpg" alt="Abbildung 3: Schematische Darstellung des Lösungsansatzes, Teil 2" title="Abbildung 3: Schematische Darstellung des Lösungsansatzes, Teil 2" width="439" height="565" class="aligncenter size-full wp-image-106" /><br />
+<strong>Abbildung 3: Schematische Darstellung des Lösungsansatzes, Teil 2</strong></p>
+<p>Weiter oben wurde bereits die Verknüpfung der Primärdaten mit den bibliographischen Daten angesprochen, was hier nochmals aufgegriffen wird.<br />
+In den archäologischen Datenbanken sind auch Verknüpfungen zwischen Forschungsdaten und bibliographischen Daten enthalten, d.h. es werden z.B. zu einer Publikation die entsprechenden Fotos zu Grabungsobjekten verknüpft.<br />
+Ziel ist es natürlich, diese Verbindung zu erhalten und ggf. &#8220;zu festigen&#8221;.<br />
+Die Verbindung der Forschungsdaten mit den bibliographischen Daten wird auf zwei Ebenen realisiert werden:</p>
+<ol>
+<li> durch Persistent Identifier auf Datenebene und</li>
+<li>durch Beziehungen/Relations in CIDOC bzw. FRBR.</li>
+</ol>
+<p>Wie dies genau aussehen wird, ist u.a. Gegenstand unserer Bemühungen in den nächsten Wochen und Monaten. Dazu muss das Modell FRBRoo analysiert und auf unsere Bedürfnisse angepasst, d.h. vor allem reduziert werden, da nicht alle Objekte und Relationen für unsere Daten relevant sein werden.<br />
+Ferner ist natürlich das Dokumentenrepositorium aufzubauen und die Exportschnittstelle des Dokumentenrepositoriums von MODS zu FRBRoo zu realisieren.</p>
+<h3>Die Entwicklung des Dokumentenrepositoriums</h3>
+<p>Im Rahmen des ArcheoInf-Projekts wird ein Dokumentenrepositorium eingerichtet, das zwei verschiedenen Zwecken dienen soll: der Recherche in den bibliographischen Daten, die von den Partnerprojekten zusammengestellt worden sind, und der Open Access-Publikation wissenschaftlicher Texte.   </p>
+<p>Die Arbeitsgruppe Dokumentenrepositorium konnte dem Beirat die Benutzeroberfläche des Repositorium-Prototyps präsentieren und die Funktionalitäten erklären; erste Beispieldaten sind bereits eingespielt worden. Das technische Konzept beruht auf der Architektur der Hochschulbibliographie der Ruhr-Universität Bochum, die derzeit in einem Projekt der Universitätsbibliothek Bochum erstellt wird. Diese Architektur setzt sich aus verschiedenen Open Source-Programmen zusammen, so dass die Hochschulbibliographie und das darauf aufsetzende ArcheoInf-Repository nicht von kommerziellen Produkten abhängig sein werden und größter Spielraum für die eigene Gestaltung des Systems besteht.</p>
+<h4>ArcheoInf Dokumentenrepositorium: Oberfläche des Prototyps</h4>
+<p><img src="wp-content/uploads/dokrepwebui_800.jpg" alt="Abbildung 4: Web-Oberfläche des prototypischen Dokumentenrepositoriums" title="Abbildung 4: Web-Oberfläche des prototypischen Dokumentenrepositoriums" class="alignnone size-full wp-image-119" /><br />
+<strong>Abbildung 4: Web-Oberfläche des prototypischen Dokumentenrepositoriums</strong></p>
+<p>Die Oberfläche des Repositoriums bietet im linken Frame die Möglichkeit, Publikationen zu melden und open access zu veröffentlichen (Kasten oben links). Darunter befinden sich Bereiche, in denen Informationen über „Open Access“ in der Archäologie zu finden sind (mit Links zu Online-Zeitschriften, der Virtuellen Fachbibliothek für Altertumswissenschaften Propylaeum, dem Informationsportal open-access.net und weiterführenden Informationen für Autoren), Links zu den ArcheoInf-Partnerprojekten sowie der Bereich „FAQ“ mit Erläuterungen zum Repositorium, zu ArcheoInf u.a.</p>
+<p>Im mittleren Frame werden je nach Nutzung des Repositoriums entweder Publikationen angezeigt, die kürzlich gemeldet wurden, oder es wird die Trefferliste der Recherche im Datenpool der bibliographischen Daten der Projektpartner ausgegeben. Umfangreiche Suchmöglichkeiten für die Literaturrecherche werden im rechten Frame angeboten.</p>
+<h4>Die Funktionalitäten des Repositoriums im Einzelnen</h4>
+<ol>
+<li>Publikationen open access veröffentlichen
+<p>Dieser Service richtet sich in erster Linie an die Projektpartner, die hier ihre Publikationen melden und open access veröffentlichen können. Eingestellt werden können nicht nur Monographien oder Zeitschriftenaufsätze, sondern auch Vorträge oder Forschungs- und Projektberichte, die für die Arbeit im Rahmen des Projekts wichtig sind und auf die Mitarbeiter Zugriff haben sollen, egal wo sie arbeiten. Dokumente, die nur innerhalb des jeweiligen Projekts zur Verfügung stehen sollen, werden nicht für die Öffentlichkeit freigegeben.   </p>
+<p>Der Weg zur Meldung von Titeldaten ist barrierefrei gestaltet: Der Wissenschaftler richtet zunächst ein Benutzerkonto mit Email und Passwort ein. Dann kann er seine Publikationen melden (Auswahl einer Publikationsart, Eingabe der Titeldaten, evt. Hochladen eines Volltextes). Über das Benutzerkonto können die gemeldeten Daten abgefragt und bearbeitet werden.<br />
+Die gemeldeten Titeldaten durchlaufen eine bibliothekarische Qualitätskontrolle, werden evt. ergänzt und dann freigeschaltet; die Publikation erscheint im mittleren Frame als neu eingestellter Titel.
+</li>
+<li>Recherche in den bibliographischen Daten
+<p>Die bibliographischen Daten aus den Partnerprojekten sollen offen zugänglich sein für eine Literaturrecherche, die gegenüber der Suche in den bekannten fachrelevanten Informationsmitteln (Datenbanken wie Dyabola, die Année philologique oder Bibliothekskataloge von Spezialbibliotheken) Mehrwerte bietet: Die Partnerprojekte erfassen Literatur in Verbindung zu einzelnen Fundobjekten; Ziel ist, dass die Titeldaten in Verbindung mit den Funden abgefragt werden können. Die Partnerprojekte erschließen ihre Literaturdaten zudem z.T. tiefer, als dies in den fachrelevanten Informationsmitteln geschieht; verzeichnet ist außerdem graue Literatur aus den Ländern, in denen die Grabungen und Surveys stattfanden und die den Weg in deutsche Bibliotheken vielfach nicht gefunden hat.<br />
+In das Suchfeld rechts oben im Frontend können Suchbegriffe eingegeben werden, die automatisch mit dem Boole’schen Operatoren „und“ verknüpft sind. Die Ergebnisse der Suche werden im mittleren Frame gerankt ausgegeben. Im rechten Frame stehen verschiedene Möglichkeiten zur Einschränkung der Treffermenge zur Verfügung, vorgesehen sind bisher die Eingrenzung durch Erscheinungsjahre, Publikationsart oder Autoren. Die Einbindung des ArcheoInf-Thesaurus ist geplant, so dass gezielt nach Schlagwörtern recherchiert werden kann. Für individuelle Suchanfragen können RSS-Feeds eingerichtet werden. Auch beim Dokumentenrepositorium wird großer Wert auf die Semantic Web-Fähigkeit gelegt; die Titelangaben können in RDFa (RDF = Resource Description Framework, eine formale Sprache zur Bereitstellung von Metadaten im World Wide Web) angezeigt werden.
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="footer">
+<p id="date"><a href="mailto:silvia.vanbeek@rub.de,hans-georg.becker@tu-dortmund.de">ArcheoInf-Redaktion</a>, zuletzt bearbeitet: 27. Februar 2009</p>
+</div>
+</div>
+</body>
+</html>
